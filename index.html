@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>El Pollo Loco</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌶️</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="home-screen" class="home-screen">
+        <div class="hero-card">
+          <p class="eyebrow">Jump & Run</p>
+          <h1>El Pollo Loco</h1>
+
+          <img
+            class="start-image"
+            src="img/9_intro_outro_screens/start/startscreen_1.png"
+            alt="El Pollo Loco Startscreen"
+          />
+
+          <p class="hero-text">
+            Hilf Pepe durch die Wüste. Weiche den Hühnern aus, sammle Coins und
+            Flaschen und besiege den Endboss.
+          </p>
+
+          <div class="button-row">
+            <button id="start-button" class="primary-button">
+              Spiel starten
+            </button>
+            <button id="help-button" class="secondary-button">Steuerung</button>
+          </div>
+
+          <a class="legal-link" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+
+      <section id="game-screen" class="game-screen hidden">
+        <div class="game-toolbar">
+          <button id="home-button" class="toolbar-button">Home</button>
+          <button id="restart-button" class="toolbar-button">Restart</button>
+          <button id="sound-button" class="toolbar-button">Sound an</button>
+          <button id="fullscreen-button" class="toolbar-button">
+            Fullscreen
+          </button>
+        </div>
+
+        <div class="canvas-wrapper">
+          <canvas id="canvas" width="720" height="480"></canvas>
+
+          <div id="game-over-overlay" class="end-screen-overlay hidden">
+            <div class="end-screen-card image-card">
+              <img
+                class="end-screen-image"
+                src="img/9_intro_outro_screens/game_over/game over.png"
+                alt="Game Over"
+              />
+
+              <p>
+                Die Hühner waren diesmal schneller. Starte neu und versuch es
+                nochmal.
+              </p>
+
+              <div class="button-row">
+                <button id="game-over-restart-button" class="primary-button">
+                  Neu starten
+                </button>
+                <button id="game-over-home-button" class="secondary-button">
+                  Home
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="win-overlay" class="end-screen-overlay hidden">
+            <div class="end-screen-card image-card">
+              <img
+                class="end-screen-image"
+                src="img/You won, you lost/You Win A.png"
+                alt="You Win"
+              />
+
+              <p>Pepe hat den Endboss besiegt. Starke Runde.</p>
+
+              <div class="button-row">
+                <button id="win-restart-button" class="primary-button">
+                  Neu starten
+                </button>
+                <button id="win-home-button" class="secondary-button">
+                  Home
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="mobile-controls"
+          class="mobile-controls"
+          aria-label="Mobile Steuerung"
+        >
+          <button id="touch-left" class="touch-button">←</button>
+          <button id="touch-jump" class="touch-button">↑</button>
+          <button id="touch-throw" class="touch-button">🍾</button>
+          <button id="touch-right" class="touch-button">→</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="help-dialog" class="help-dialog">
+      <button id="close-help-button" class="dialog-close">×</button>
+      <h2>Steuerung</h2>
+      <p>
+        <strong>Desktop:</strong> Pfeil links/rechts zum Laufen, Leertaste oder
+        Pfeil hoch zum Springen.
+      </p>
+      <p><strong>Flasche werfen:</strong> Taste D.</p>
+      <p><strong>Fullscreen:</strong> Button „Fullscreen“ im Spiel.</p>
+      <p>
+        <strong>Mobil:</strong> Im Querformat erscheinen Touch-Buttons für
+        links, rechts, springen und werfen.
+      </p>
+      <p>
+        Sammle Salsa-Flaschen ein. Nur gesammelte Flaschen können geworfen
+        werden.
+      </p>
+    </dialog>
+
+    <div id="rotate-device" class="rotate-device">
+      <div>
+        <h2>Bitte Gerät drehen</h2>
+        <p>El Pollo Loco funktioniert mobil im Querformat.</p>
+      </div>
+    </div>
+
+    <script src="classes/keyboard.class.js"></script>
+    <script src="classes/audio-manager.class.js"></script>
+    <script src="classes/drawable-object.class.js"></script>
+    <script src="classes/movable-object.class.js"></script>
+    <script src="classes/status-bar.class.js"></script>
+    <script src="classes/coin.class.js"></script>
+    <script src="classes/bottle.class.js"></script>
+    <script src="classes/throwable-object.class.js"></script>
+    <script src="classes/character.class.js"></script>
+    <script src="classes/chicken.class.js"></script>
+    <script src="classes/cloud.class.js"></script>
+    <script src="classes/background-object.class.js"></script>
+    <script src="classes/endboss.class.js"></script>
+    <script src="classes/level.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="classes/game-controller.class.js"></script>
+    <script src="classes/world.class.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

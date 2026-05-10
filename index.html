@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" translate="no">
+<html lang="en" translate="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,22 +21,20 @@
           <img
             class="start-image"
             src="img/9_intro_outro_screens/start/startscreen_1.png"
-            alt="El Pollo Loco Startscreen"
+            alt="El Pollo Loco start screen"
           />
 
           <p class="hero-text">
-            Hilf Pepe durch die Wüste. Weiche den Hühnern aus, sammle Coins und
-            Flaschen und besiege den Endboss.
+            Help Pepe cross the desert, dodge wild chickens, collect coins and
+            salsa bottles, and defeat the endboss.
           </p>
 
           <div class="button-row">
-            <button id="start-button" class="primary-button">
-              Spiel starten
-            </button>
-            <button id="help-button" class="secondary-button">Steuerung</button>
+            <button id="start-button" class="primary-button">Start Game</button>
+            <button id="help-button" class="secondary-button">Controls</button>
           </div>
 
-          <a class="legal-link" href="impressum.html">Impressum</a>
+          <a class="legal-link" href="impressum.html">Legal Notice</a>
         </div>
       </section>
 
@@ -44,7 +42,7 @@
         <div class="game-toolbar">
           <button id="home-button" class="toolbar-button">Home</button>
           <button id="restart-button" class="toolbar-button">Restart</button>
-          <button id="sound-button" class="toolbar-button">Sound an</button>
+          <button id="sound-button" class="toolbar-button">Sound: On</button>
           <button id="fullscreen-button" class="toolbar-button">
             Fullscreen
           </button>
@@ -61,14 +59,11 @@
                 alt="Game Over"
               />
 
-              <p>
-                Die Hühner waren diesmal schneller. Starte neu und versuch es
-                nochmal.
-              </p>
+              <p>The chickens were faster this time. Restart and try again.</p>
 
               <div class="button-row">
                 <button id="game-over-restart-button" class="primary-button">
-                  Neu starten
+                  Restart
                 </button>
                 <button id="game-over-home-button" class="secondary-button">
                   Home
@@ -85,11 +80,11 @@
                 alt="You Win"
               />
 
-              <p>Pepe hat den Endboss besiegt. Starke Runde.</p>
+              <p>Pepe defeated the endboss. Great job!</p>
 
               <div class="button-row">
                 <button id="win-restart-button" class="primary-button">
-                  Neu starten
+                  Restart
                 </button>
                 <button id="win-home-button" class="secondary-button">
                   Home
@@ -102,7 +97,7 @@
         <div
           id="mobile-controls"
           class="mobile-controls"
-          aria-label="Mobile Steuerung"
+          aria-label="Mobile controls"
         >
           <button id="touch-left" class="touch-button">←</button>
           <button id="touch-jump" class="touch-button">↑</button>
@@ -114,27 +109,24 @@
 
     <dialog id="help-dialog" class="help-dialog">
       <button id="close-help-button" class="dialog-close">×</button>
-      <h2>Steuerung</h2>
+      <h2>Controls</h2>
       <p>
-        <strong>Desktop:</strong> Pfeil links/rechts zum Laufen, Leertaste oder
-        Pfeil hoch zum Springen.
+        <strong>Desktop:</strong> Use the left and right arrow keys to move.
+        Jump with the up arrow key or spacebar.
       </p>
-      <p><strong>Flasche werfen:</strong> Taste D.</p>
-      <p><strong>Fullscreen:</strong> Button „Fullscreen“ im Spiel.</p>
+      <p><strong>Throw bottle:</strong> Press D.</p>
+      <p><strong>Fullscreen:</strong> Use the Fullscreen button in the game.</p>
       <p>
-        <strong>Mobil:</strong> Im Querformat erscheinen Touch-Buttons für
-        links, rechts, springen und werfen.
+        <strong>Mobile:</strong> In landscape mode, touch buttons appear for
+        moving left, jumping, throwing and moving right.
       </p>
-      <p>
-        Sammle Salsa-Flaschen ein. Nur gesammelte Flaschen können geworfen
-        werden.
-      </p>
+      <p>Collect salsa bottles first. Only collected bottles can be thrown.</p>
     </dialog>
 
     <div id="rotate-device" class="rotate-device">
       <div>
-        <h2>Bitte Gerät drehen</h2>
-        <p>El Pollo Loco funktioniert mobil im Querformat.</p>
+        <h2>Rotate your device</h2>
+        <p>El Pollo Loco is playable on mobile devices in landscape mode.</p>
       </div>
     </div>
 
